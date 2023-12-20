@@ -55,7 +55,14 @@ Character classes are very much intertwined with bracket expressions. Inside the
 
 ### Flags
 
+Flags in Regex are used to add extra parameters needed such as case-sensitive matching (i), which will search for all matches instead of just one. In the Regex being demonstrated there is no flag being shown by having no letters at the end of /^#?([a-f0-9]{6}|[a-f0-9]{3})$/.
+By having no flags that means our Regex is case sensitive and since its a-f is lowercase in the regex that means it will be then looking for lowercase letters to match.
+If we wanted enable the inclusion of making it not case sensitive as a further example  we would add  i to the end of the Regex,  /^#?([a-f0-9]{6}|[a-f0-9]{3})$/i
+
 ### Grouping and Capturing
+
+Grouping constructs are what sets the sub expression which is always known as the matched string. They are usually shown with parentheses. In the code that we will use, [a-f0-9]{6}|[a-f0-9]{3}The subexpression is what is resting inside of the given parenthesis. 
+[a-f0-9]This sets the character set which will then be used for matching. A-F are being used by the hex values and will not go to Z. 0-9 are the numbers indicated which will be used in hex codes that our numbers will be looking to match with.
 
 ### Bracket Expressions
 
@@ -63,6 +70,13 @@ Bracket expressions are an expression that are set within brackets. It’s self 
 Example: [a-f0-9]{6} This will set the character and will be then used for matching the hex values that are essentially 6 characters long. [a-f0-9]{3}This will set the character that will be used for matching containing hex values that are only 3 characters long in this example.
 
 ### Greedy and Lazy Match
+
+As to be expected the definition of a greedy match indicates that a search will try to find the longest and possible string whereas a lazy match will do the complete opposite and find the smallest possible given string.
+Greedy Quantifiers Examples:
+One or more revised gist
+Zero or More
+{2,4} = Two to four times as a greedy lazy quantifier
+The expression: https?:\/\/)? Uses the lazy match of? Which is looking for http or https [Example:] [a-zA-Z0-9()]{1,6}is looking for a-z and is also looking for 0-9; which will be one to six times as greedy. You take the basic information given and acknowledge the greedy match/ lazy match that is directly provided with the given possible string that is showcased.
 
 ### Boundaries
 
