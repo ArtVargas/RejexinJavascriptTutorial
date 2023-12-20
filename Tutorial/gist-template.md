@@ -1,4 +1,4 @@
-# Chapter 1 By Art Vargas: Matching A Hex Value Rejex
+# Chapter 1 By Art Vargas: Matching A Hex Value Regex
 
 Thank you and welcome to this comprehensive tutorial in regards to understanding and following the concept of Regex which is also known as regular expressions that are used to search through various data which will then find strings that fit within a certain given parameter. Upon learning and completing this tutorial you will have an absolute clear understanding of r components which will be demonstrated with proper comprehension and vocabulary in order to give detailed explanations which can later be used to break apart components which will solely be focused on the topic of Regex being able to be assisted with hex values.
 
@@ -39,15 +39,28 @@ The anchors for our Regex are the ^ and $ characters. This will indicate that th
 
 ### Quantifiers
 
+In regular expressions, quantifiers are metacharacters that specify how many times the previous character or group should be matched. Quantifiers will allow you to specify the number of occurrences of a character or group which will make the process of matching patterns with varying lengths much more simpler. For our Regex, ? is the preceding quantifier which in terms states that the preceding character is options. This will indicate that the  # in the Regex is optional, and in 6 character hex codes. 
+Example: #FF0000 OR FF0000.
+The ? means that there can be a 0 or 1 occurrence which will either show up all at once or not at all and if the string starts with  # it will be matched but, even without including the  #, it will still match if it follows the other quantifiers. Other 2 quantifiers are {6} and {3}. These set character amounts that the Regex looks to match with since in this case hex values can come in 6 characters (#FF0000) or 3 characters (#F00).
+
 ### OR Operator
 
+The OR Operator allows you to search for 2 different matches which will essentially match 1 or match 2.
+In our Regex: [a-f0-9]{6}|[a-f0-9]{3}, the OR operator is in the middle. It is looking to match 6 characters with a character class of a-f0-9, or in this case 3 characters with a character class of a-f0-9.
+
 ### Character Classes
+
+Character classes are very much intertwined with bracket expressions. Inside the bracket expression is the Character Class which determines the characters and numbers that will be used for matching. The most basic form of a character class is to simply just place a set of characters side-by-side within square brackets. For our Regex `[a-f0-9]``, a-f because hex values use a-f and don’t go to z. 0-9 are the numbers that will be primarily used in hex codes so that the given numbers will match.
+
 
 ### Flags
 
 ### Grouping and Capturing
 
 ### Bracket Expressions
+
+Bracket expressions are an expression that are set within brackets. It’s self explanatory in the name but they add great value due to setting the character and number set that the Regex will then match with.
+Example: [a-f0-9]{6} This will set the character and will be then used for matching the hex values that are essentially 6 characters long. [a-f0-9]{3}This will set the character that will be used for matching containing hex values that are only 3 characters long in this example.
 
 ### Greedy and Lazy Match
 
