@@ -24,7 +24,7 @@ Throughout the tutorial being demonstrated that will feature regular expressions
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
 - [Boundaries](#boundaries)
 - [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
+
 
 ## Regex Components
 
@@ -87,8 +87,14 @@ Example:  \b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)is searching for a whole word or digi
 
 Back references are filters used to match the same text which is previously matched by a capturing group. A notable example would be when you need to search for a repeated word, the first match given could possibly use a pattern that extracts a single word. The second would back reference that refers to the captured group that was given to the word extraction.
 
-### Look-ahead and Look-behind
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Hello! I am Art Vargas. I am currently studying Full Stack Web Development in the UTSA Bootcamp here in San Antonio, TX. Any additional questions or concerns please feel free to contact me!
+
+Follow me on GitHub: 
+
+Deployed GitHub-Gist Link:
+
+GitHub Repository Link: 
+
