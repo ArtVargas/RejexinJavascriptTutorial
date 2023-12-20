@@ -80,7 +80,12 @@ The expression: https?:\/\/)? Uses the lazy match of? Which is looking for http 
 
 ### Boundaries
 
+Boundaries are similar to an anchor such as in the way they used the expression /b for word boundaries and /B for non-word boundaries. They are a zero-length match that marks the beginning and end of a numerical sequence that makes it much easier to find the whole words needed for expression values. 
+Example:  \b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)is searching for a whole word or digit in the expression provided as an example of analysis and discussion.
+
 ### Back-references
+
+Back references are filters used to match the same text which is previously matched by a capturing group. A notable example would be when you need to search for a repeated word, the first match given could possibly use a pattern that extracts a single word. The second would back reference that refers to the captured group that was given to the word extraction.
 
 ### Look-ahead and Look-behind
 
