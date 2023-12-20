@@ -28,6 +28,7 @@ Throughout the tutorial being demonstrated that will feature regular expressions
 
 ## Regex Components
 
+Example: /^#?([a-f0-9]{6}|[a-f0-9]{3})$/
 ### Anchors
 
 A Regex anchor is the start and end of the string which makes it so the Regex matches the string we are looking for.
