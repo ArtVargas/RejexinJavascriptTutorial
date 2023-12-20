@@ -29,6 +29,7 @@ Throughout the tutorial being demonstrated that will feature regular expressions
 ## Regex Components
 
 Example: /^#?([a-f0-9]{6}|[a-f0-9]{3})$/
+
 ### Anchors
 
 A Regex anchor is the start and end of the string which makes it so the Regex matches the string we are looking for.
@@ -93,9 +94,10 @@ Back references are filters used to match the same text which is previously matc
 
 Hello! I am Art Vargas. I am currently studying Full Stack Web Development in the UTSA Bootcamp here in San Antonio, TX. Any additional questions or concerns please feel free to contact me!
 
-Follow me on GitHub: 
+Follow me on GitHub: https://github.com/ArtVargas
 
-Deployed GitHub-Gist Link:
+Deployed GitHub-Gist Link: https://gist.github.com/ArtVargas/f40812e90a8af6957b49af4814662f09
 
-GitHub Repository Link: 
+GitHub Repository Link: https://github.com/ArtVargas/RejexinJavascriptTutorial/tree/main
+
 
